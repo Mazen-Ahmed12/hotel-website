@@ -1,6 +1,9 @@
 import {
   X,
   Dot,
+  Search,
+  Menu,
+  MoveUpRight,
 } from "lucide-react";
 
 import {
@@ -19,7 +22,10 @@ export const socialIcons = {
 
 const icons = {
   x: X, 
-  Dot:Dot,
+  Dot:Dot,  
+  Search:Search,
+  Menu:Menu,
+  MoveUpRight:MoveUpRight,
   ...socialIcons,
 };
 
