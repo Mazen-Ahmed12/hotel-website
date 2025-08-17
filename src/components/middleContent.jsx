@@ -8,7 +8,7 @@ import { Icon } from "./icon";
 
 export const MiddleContent = () => {
   return (
-    <div className="absolute inset-x-0 left-60 -bottom-40 mx-auto w-[90%] z-10 ">
+    <div className="absolute inset-x-0 left-60 -bottom-40 mx-auto w-[84%] z-10 ">
       <div className="flex w-full h-40 bg-[#487964]/70 p-6 rounded-lg shadow-lg">
         <div className="flex items-center gap-6">
           <CheckInDate label="Check In" />

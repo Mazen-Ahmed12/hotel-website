@@ -7,6 +7,9 @@ import {
   House,
   Calendar,
   CheckCircle2,
+  Users,
+  BedDouble,
+  Bath,
 } from "lucide-react";
 
 import {
@@ -32,6 +35,9 @@ const icons = {
   House:House,
   Calendar:Calendar,
   CheckCircle: CheckCircle2,
+  Users: Users,
+  Bed: BedDouble,
+  Bath: Bath,
   ...socialIcons,
 };
 
