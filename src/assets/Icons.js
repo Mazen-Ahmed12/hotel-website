@@ -4,6 +4,7 @@ import {
   Search,
   Menu,
   MoveUpRight,
+  House,
 } from "lucide-react";
 
 import {
@@ -26,6 +27,7 @@ const icons = {
   Search:Search,
   Menu:Menu,
   MoveUpRight:MoveUpRight,
+  House:House,
   ...socialIcons,
 };
 

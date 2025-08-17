@@ -1,13 +1,17 @@
-"use client"
+"use client";
 
 import { InfoBar } from "@/components/InfoBar";
-import { Page } from "./components/MainPage/Page";
+import { MainPage } from "./components/MainPage";
+import { About } from "./components/About";
+import { MiddleContent } from "@/components/middleContent";
 
 export default function Home() {
   return (
     <>
-    <InfoBar/>
-    <Page/>
+      <InfoBar />
+      <MainPage />
+      <MiddleContent />
+      <About />
     </>
   );
 }
