@@ -5,6 +5,8 @@ import {
   Menu,
   MoveUpRight,
   House,
+  Calendar,
+  CheckCircle2,
 } from "lucide-react";
 
 import {
@@ -28,6 +30,8 @@ const icons = {
   Menu:Menu,
   MoveUpRight:MoveUpRight,
   House:House,
+  Calendar:Calendar,
+  CheckCircle: CheckCircle2,
   ...socialIcons,
 };
 

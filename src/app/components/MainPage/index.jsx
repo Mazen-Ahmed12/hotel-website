@@ -14,7 +14,7 @@ export const MainPage = () => {
         alt="Hotel Background"
         priority
         fill
-        className="object-cover"
+        className="object-cover brightness-50"
       />
       <div className="absolute w-full h-full z-10">
         <Header />
