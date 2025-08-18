@@ -1,7 +1,7 @@
 // components/FoodDrinkSection.tsx
 import Image from "next/image";
-import { CheckCircle2 } from "lucide-react";
 import { Icon } from "@/components/icon";
+import { Button } from "@/components/ui/button";
 
 const features = [
   {
@@ -20,7 +20,15 @@ const features = [
       "The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.",
   },
 ];
-
+const clients = [
+  "/images/client1.jpg",
+  "/images/client2.jpg",
+  "/images/client3.jpg",
+  "/images/client4.jpg",
+  "/images/client5.jpg",
+  "/images/client6.jpg",
+  "/images/client7.jpg",
+];
 export const FoodAndDrinks = () => {
   return (
     <section className="py-16 px-6 md:px-12 lg:px-20 bg-white">
@@ -42,7 +50,10 @@ export const FoodAndDrinks = () => {
           <ul className="mt-6 space-y-4">
             {features.map((feature, index) => (
               <li key={index} className="flex items-start gap-3">
-                <CheckCircle2 className="text-teal-500 w-6 h-6 flex-shrink-0" />
+                <Icon
+                  name="CheckCircle"
+                  className="text-teal-500 w-6 h-6 flex-shrink-0"
+                />
                 <div>
                   <h4 className="text-lg font-semibold text-gray-800">
                     {feature.title}
@@ -53,7 +64,7 @@ export const FoodAndDrinks = () => {
             ))}
           </ul>
 
-          <button className="w-50 h-11 mt-8 inline-flex items-center gap-2 bg-teal-600 text-white px-6 py-3 rounded-lg shadow hover:bg-teal-700 transition">
+          <Button className="w-50 h-11 mt-8 inline-flex items-center gap-2 bg-teal-600 text-white px-6 py-3 rounded-lg shadow hover:bg-teal-700 transition">
             Learn More Hotel
             <Icon
               name="MoveUpRight"
@@ -61,10 +72,10 @@ export const FoodAndDrinks = () => {
               strokeWidth={4}
               className="text-white"
             />
-          </button>
+          </Button>
         </div>
 
-        {/* Right Images */}
+        {/* Right Content */}
         <div className="flex-1 relative h-full min-h-[400px]">
           <div className="h-full flex items-center">
             <div className="relative w-full h-[500px]">
@@ -80,7 +91,7 @@ export const FoodAndDrinks = () => {
                 </div>
               </div>
 
-              {/* Right Image - Overlaps with left */}
+              {/* Right Image  */}
               <div className="absolute bottom-5 right-0 w-[46%] h-full">
                 <div className="relative w-full h-full">
                   <Image
@@ -92,58 +103,24 @@ export const FoodAndDrinks = () => {
                 </div>
               </div>
 
-              {/* Floating Client Badge - Centered between both images */}
+              {/* Floating Client */}
               <div className="absolute -bottom-5 left-1/2 transform -translate-x-1/2 bg-white shadow-xl rounded-lg p-4 w-48 z-10">
-                <div className="flex items-center justify-between mb-2">
-                  <div className="flex -space-x-2">
-                    {[1, 2, 3, 4].map((i) => (
-                      <div
-                        key={i}
-                        className="w-8 h-8 rounded-full bg-gray-200 border-2 border-white"
-                      />
-                    ))}
+                <div className="flex flex-col items-center justify-between">
+                  <div className="text-center pb-3">
+                    <p className="text-xs text-gray-500">Popular Client</p>
                   </div>
-                </div>
-                <div className="text-center">
-                  <p className="text-xs text-gray-500">Popular Client</p>
-                  <div className="flex items-center justify-center gap-1 mt-1">
-                    {[...Array(5)].map((_, i) => (
-                      <Icon
-                        key={i}
-                        name="Star"
-                        size={16}
-                        className="text-yellow-400"
+                  <div className="flex -space-x-4">
+                    {clients.map((src, index) => (
+                      <img
+                        key={`${src}-${index}`} 
+                        src={src}
+                        alt={`Client ${index + 1}`}
+                        className="w-8 h-8 rounded-full object-cover border-2 border-white"
                       />
                     ))}
-                    <span className="text-xs font-medium text-gray-700 ml-1">
-                      5.0
-                    </span>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-        <div className="absolute -bottom-20 left-1/2 transform -translate-x-1/2 bg-white shadow-xl rounded-lg p-4 w-48 z-10">
-          <div className="flex items-center justify-between mb-2">
-            <div className="flex -space-x-2">
-              {[1, 2, 3, 4].map((i) => (
-                <div
-                  key={i}
-                  className="w-8 h-8 rounded-full bg-gray-200 border-2 border-white"
-                />
-              ))}
-            </div>
-          </div>
-          <div className="text-center">
-            <p className="text-xs text-gray-500">Popular Client</p>
-            <div className="flex items-center justify-center gap-1 mt-1">
-              {[...Array(5)].map((_, i) => (
-                <Icon name="Star" size={16} className="text-yellow-400" />
-              ))}
-              <span className="text-xs font-medium text-gray-700 ml-1">
-                5.0
-              </span>
             </div>
           </div>
         </div>

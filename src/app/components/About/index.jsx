@@ -102,7 +102,7 @@ export const About = () => {
             <div className="border-gray-300 flex items-center gap-4">
               <div className="relative w-16 h-16 rounded-full overflow-hidden">
                 <Image
-                  src="/images/images.jpg"
+                  src="/images/Robert-L.Robinson.jpg"
                   alt="Robert L. Robinson"
                   fill
                   className="object-cover"

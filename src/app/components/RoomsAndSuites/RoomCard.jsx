@@ -15,15 +15,15 @@ export const RoomCard = ({room}) => {
         <h3 className="text-2xl font-bold text-gray-800">{room.name}</h3>
         <div className="flex items-center gap-6 text-gray-600">
           <span className="flex items-center gap-2">
-            <Icon name="Users" size={18} className="text-teal-600" />{" "}
+            <Icon name="Users" size={18} className="text-teal-600" />
             {room.guests} Guests
           </span>
           <span className="flex items-center gap-2">
-            <Icon name="Bed" size={18} className="text-teal-600" /> {room.beds}{" "}
+            <Icon name="Bed" size={18} className="text-teal-600" /> {room.beds}
             Beds
           </span>
           <span className="flex items-center gap-2">
-            <Icon name="Bath" size={18} className="text-teal-600" /> {room.bath}{" "}
+            <Icon name="Bath" size={18} className="text-teal-600" /> {room.bath}
             Bath
           </span>
         </div>
