@@ -9,6 +9,12 @@ import { RoomsAndSuites } from "@/app/components/RoomsAndSuites";
 import { HotelServices } from "@/app/components/HotelServices";
 import { VideoSection } from "@/app/components/VideoSection";
 import { FoodAndDrinks } from "@/app/components/FoodAndDrinks";
+import { SpecialOffers } from "./components/SpecialOffers";
+import { Testimonial } from "./components/Testimonial";
+import { Staff } from "./components/staff";
+import { HotelNews } from "@/app/components/HotelNews";
+import { Gallery } from "@/app/components/Gallery";
+import { Footer } from "@/app/components/Footer";
 
 export default function Home() {
   return (
@@ -22,6 +28,12 @@ export default function Home() {
       <HotelServices />
       <VideoSection />
       <FoodAndDrinks />
+      <SpecialOffers />
+      <Testimonial />
+      <Staff/>
+      <HotelNews/>
+      <Gallery />
+      <Footer />
     </div>
   );
 }
