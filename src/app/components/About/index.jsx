@@ -3,28 +3,28 @@ import { Icon } from "../../../components/icon";
 import Image from "next/image";
 
 
-const features = [
-  {
-    name: "24-Hours Emergency Service",
-  },
-  {
-    name: "Comfortable Atmosphere",
-  },
-  {
-    name: "Something by accident",
-  },
-  {
-    name: "It is a Long Established fact",
-  },
-  {
-    name: "Flexible and Cost-Effective",
-  },
-  {
-    name: "Get Free Consultation Anytime",
-  },
-];
-
 export const About = () => {
+  
+  const features = [
+    {
+      name: "24-Hours Emergency Service",
+    },
+    {
+      name: "Comfortable Atmosphere",
+    },
+    {
+      name: "Something by accident",
+    },
+    {
+      name: "It is a Long Established fact",
+    },
+    {
+      name: "Flexible and Cost-Effective",
+    },
+    {
+      name: "Get Free Consultation Anytime",
+    },
+  ];
   return (
     <div className="w-full h-full pt-30 z-10 flex flex-col gap-5 items-center justify-center bg-[#e9f0ec]">
       <div className="w-full h-full relative flex justify-center items-center bg-[#e9f0ec] p-4 md:p-6 !py-30 font-sans">

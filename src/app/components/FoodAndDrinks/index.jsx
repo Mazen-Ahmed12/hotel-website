@@ -3,33 +3,33 @@ import Image from "next/image";
 import { Icon } from "@/components/icon";
 import { Button } from "@/components/ui/button";
 
-const features = [
-  {
-    title: "Free Breakfast, Tea & Coffee",
-    description:
-      "All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator.",
-  },
-  {
-    title: "Quality Foods & Drink",
-    description:
-      "It uses a dictionary of over Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum text.",
-  },
-  {
-    title: "Restorent & Bar",
-    description:
-      "The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.",
-  },
-];
-const clients = [
-  "/images/client1.jpg",
-  "/images/client2.jpg",
-  "/images/client3.jpg",
-  "/images/client4.jpg",
-  "/images/client5.jpg",
-  "/images/client6.jpg",
-  "/images/client7.jpg",
-];
 export const FoodAndDrinks = () => {
+  const features = [
+    {
+      title: "Free Breakfast, Tea & Coffee",
+      description:
+        "All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator.",
+    },
+    {
+      title: "Quality Foods & Drink",
+      description:
+        "It uses a dictionary of over Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum text.",
+    },
+    {
+      title: "Restorent & Bar",
+      description:
+        "The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.",
+    },
+  ];
+  const clients = [
+    "/images/client1.jpg",
+    "/images/client2.jpg",
+    "/images/client3.jpg",
+    "/images/client4.jpg",
+    "/images/client5.jpg",
+    "/images/client6.jpg",
+    "/images/client7.jpg",
+  ];
   return (
     <section className="py-16 px-6 md:px-12 lg:px-20 bg-white">
       <div className="flex flex-col md:flex-row gap-12 items-stretch">
@@ -112,7 +112,7 @@ export const FoodAndDrinks = () => {
                   <div className="flex -space-x-4">
                     {clients.map((src, index) => (
                       <img
-                        key={`${src}-${index}`} 
+                        key={`${src}-${index}`}
                         src={src}
                         alt={`Client ${index + 1}`}
                         className="w-8 h-8 rounded-full object-cover border-2 border-white"

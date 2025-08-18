@@ -15,6 +15,9 @@ import {
   Bubbles,
   Play,
   Star,
+  Quote,
+  User,
+  Send,
 } from "lucide-react";
 
 import {
@@ -47,7 +50,10 @@ const icons = {
   Waves: Waves,
   Bubbles: Bubbles,
   Play: Play,
+  Quote: Quote,
   Star: Star,
+  User: User,
+  Send: Send,
   ...socialIcons,
 };
 
