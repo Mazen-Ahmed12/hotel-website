@@ -10,6 +10,11 @@ import {
   Users,
   BedDouble,
   Bath,
+  Dumbbell,
+  Waves,
+  Bubbles,
+  Play,
+  Star,
 } from "lucide-react";
 
 import {
@@ -38,6 +43,11 @@ const icons = {
   Users: Users,
   Bed: BedDouble,
   Bath: Bath,
+  Dumbbell: Dumbbell,
+  Waves: Waves,
+  Bubbles: Bubbles,
+  Play: Play,
+  Star: Star,
   ...socialIcons,
 };
 

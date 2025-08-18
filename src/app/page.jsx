@@ -3,9 +3,12 @@
 import { InfoBar } from "@/components/InfoBar";
 import { MainPage } from "./components/MainPage";
 import { About } from "./components/About";
-import { MiddleContent } from "@/components/middleContent";
-import { ScrollingBars } from "@/components/ScrollingBars";
-import { RoomsAndSuites } from "@/components/RoomsAndSuites";
+import { MiddleContent } from "@/app/components/HotelCheckIn";
+import { ScrollingBars } from "@/app/components/ScrollingBars";
+import { RoomsAndSuites } from "@/app/components/RoomsAndSuites";
+import { HotelServices } from "@/app/components/HotelServices";
+import { VideoSection } from "@/app/components/VideoSection";
+import { FoodAndDrinks } from "@/app/components/FoodAndDrinks";
 
 export default function Home() {
   return (
@@ -16,6 +19,9 @@ export default function Home() {
       <About />
       <ScrollingBars />
       <RoomsAndSuites />
+      <HotelServices />
+      <VideoSection />
+      <FoodAndDrinks />
     </div>
   );
 }

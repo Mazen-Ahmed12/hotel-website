@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 
 import { Icon } from "./icon";
-import { HeaderLinks } from "@/app/components/MainPage/HeaderLinks";
+import { HeaderLinks } from "@/components/HeaderLinks";
 import Link from "next/link";
 
 export function Header() {
