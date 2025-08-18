@@ -14,7 +14,7 @@ import { Testimonial } from "./components/Testimonial";
 import { Staff } from "./components/staff";
 import { HotelNews } from "@/app/components/HotelNews";
 import { Gallery } from "@/app/components/Gallery";
-import { Footer } from "@/app/components/Footer";
+import { Footer } from "@/components/Footer";
 
 export default function Home() {
   return (

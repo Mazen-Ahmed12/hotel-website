@@ -31,7 +31,7 @@ export const Newsletter = () => {
 
   return (
     <div className="flex items-center justify-center p-4  font-sans text-white">
-      <div className="w-full max-w-sm p-8 bg-[#191919] rounded-[30px] shadow-2xl">
+      <div className="w-full max-w-sm p-8 bg-[#232323] rounded-[30px] shadow-2xl">
         <h2 className="text-xl font-bold tracking-wider mb-8 text-center md:text-left">NEWSLETTER</h2>
         
         <form onSubmit={handleSubmit} className="space-y-6">
