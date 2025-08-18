@@ -70,7 +70,7 @@ export const MainPage = () => {
               }`}
             >
               <Button 
-                className="bg-[#e6c466] hover:bg-[#d4b35a] text-black hover:text-white px-8 py-6 rounded-sm font-medium text-sm md:text-base transition-all duration-300 flex items-center gap-2 group"
+                className="bg-[#e6c466] hover:bg-[#d4b35a] text-black hover:text-white px-8 py-6 rounded-sm font-medium text-sm md:text-base transition-all duration-300 flex items-center gap-2 animate-bounce"
                 size="lg"
               >
                 Book Your Stay
@@ -93,14 +93,6 @@ export const MainPage = () => {
                 />
               </Button>
             </div>
-          </div>
-        </div>
-
-        {/* Scroll Indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-center">
-          <div className="animate-bounce text-white/80">
-            <span className="block text-sm mb-1">Scroll Down</span>
-            <Icon name="ChevronDown" size={24} className="mx-auto" />
           </div>
         </div>
       </div>
