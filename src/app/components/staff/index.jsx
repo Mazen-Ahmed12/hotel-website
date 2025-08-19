@@ -37,7 +37,7 @@ const logos = [
 
   return (
     <div className="relative min-h-screen bg-white font-[Inter] pt-20">
-      {/* Green Header Section */}
+      {/* Green Section */}
       <div className="bg-[#3c9c64] pt-16 pb-100">
         <div className="container mx-auto px-4 text-center">
           <span className="inline-block rounded-md bg-white px-4 py-1 text-sm font-semibold text-teal-600">
@@ -49,7 +49,7 @@ const logos = [
         </div>
       </div>
 
-      {/* Cards Section - Positioned between green and white */}
+      {/* Cards Section */}
       <div className="container mx-auto !bottom-8 px-4">
         <div className="relative z-10 -mt-90 flex flex-row flex-wrap justify-center">
           {staffMembers.map((staff, index) => (
@@ -60,7 +60,7 @@ const logos = [
         </div>
       </div>
 
-      {/* White Section with Logos */}
+      {/* White Section */}
       <div className="bg-white pt-25 pb-12">
         <div className="container mx-auto flex flex-wrap items-center justify-center gap-12 px-4 md:gap-12">
           {logos.map((src, i) => (

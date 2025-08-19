@@ -10,7 +10,7 @@ export const Footer = () => {
     <footer className="bg-[#191919] bg-[radial-gradient(#222_1px,transparent_1px)] text-white pt-16 pb-8">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
-          {/* Logo and Description */}
+
           <div className="mb-8 md:mb-0">
             <div className="flex items-center gap-2 text-2xl font-bold text-white mb-4">
               <Icon name="House" size={25} />
@@ -37,7 +37,7 @@ export const Footer = () => {
             </div>
           </div>
 
-          {/* Quick Links */}
+
           <div>
             <h3 className="text-lg font-semibold mb-4">Explore</h3>
             <ul className="space-y-3">
@@ -60,7 +60,7 @@ export const Footer = () => {
             </ul>
           </div>
 
-          {/* Contact Info */}
+
           <div>
             <h3 className="text-lg font-semibold mb-4">Contact</h3>
             <ul className="space-y-3">
@@ -85,11 +85,9 @@ export const Footer = () => {
             </ul>
           </div>
 
-          {/* Newsletter */}
           <Newsletter />
         </div>
 
-        {/* Copyright */}
         <div className="border-t border-gray-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm mb-4 md:mb-0">
