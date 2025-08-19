@@ -70,7 +70,7 @@ export const MainPage = () => {
               }`}
             >
               <Button 
-                className="bg-[#e6c466] hover:bg-[#d4b35a] text-black hover:text-white px-8 py-6 rounded-sm font-medium text-sm md:text-base transition-all duration-300 flex items-center gap-2 animate-bounce"
+                className="bg-[#e6c466] hover:bg-[#d4b35a] text-black hover:text-white px-8 py-6 rounded-sm font-medium text-sm md:text-base transition-all duration-300 flex items-center gap-2"
                 size="lg"
               >
                 Book Your Stay

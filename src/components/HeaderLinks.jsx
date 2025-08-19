@@ -61,7 +61,7 @@ export const HeaderLinks = () => {
         </NavigationMenu>
 
         <Button
-          className="bg-transparent shadow-none text-black place-self-center"
+          className="bg-transparent shadow-none text-black dark:text-white dark:hover:bg-transparent place-self-center"
         >
           Contact
         </Button>

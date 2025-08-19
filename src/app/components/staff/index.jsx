@@ -36,10 +36,10 @@ const logos = [
 ]
 
   return (
-    <div className="relative min-h-screen bg-white font-[Inter] pt-20">
+    <div className="relative min-h-screen bg-white dark:bg-gray-900 font-[Inter] pt-20 transition-colors duration-200">
       {/* Green Header Section */}
-      <div className="bg-[#3c9c64] pt-16 pb-100">
-        <div className="container mx-auto px-4 text-center">
+      <div className="bg-teal-600 dark:bg-teal-700 pt-16 pb-100 transition-colors duration-200">
+        <div className="container mx-auto px-4 py-16 -mt-20 relative z-10 transition-colors duration-200 text-center">
           <span className="inline-block rounded-md bg-white px-4 py-1 text-sm font-semibold text-teal-600">
             FIXLAND STAFF
           </span>
@@ -61,14 +61,14 @@ const logos = [
       </div>
 
       {/* White Section with Logos */}
-      <div className="bg-white pt-25 pb-12">
+      <div className="mt-16 bg-white dark:bg-gray-900 py-12 transition-colors duration-200">
         <div className="container mx-auto flex flex-wrap items-center justify-center gap-12 px-4 md:gap-12">
           {logos.map((src, i) => (
-            <div key={i} className="relative h-25 w-25">
+            <div key={i} className="relative h-35 w-35">
               <img
                 src={src}
                 alt={`Logo ${i + 1}`}
-                className="h-full w-full object-contain transition duration-300 hover:grayscale-0"
+                className="h-full w-full object-contain transition duration-300 hover:grayscale-0 dark:invert"
               />
             </div>
           ))}

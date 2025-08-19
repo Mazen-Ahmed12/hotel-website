@@ -26,13 +26,13 @@ export const Gallery = () => {
       </div>
 
       <div className="absolute inset-0 flex items-center justify-center">
-        <div className="flex flex-col items-center justify-center w-60 h-60 rounded-xl bg-white opacity-70">
+        <div className="flex flex-col items-center justify-center w-60 h-60 rounded-xl bg-white dark:bg-gray-800 bg-opacity-70 dark:bg-opacity-70 transition-colors duration-200">
           <Icon
             name="instagram"
-            className="relative pr-1 !text-[#3c9c64]"
+            className="relative pr-1 text-teal-600 dark:text-teal-400"
             size={25}
           />
-          <h1 className="w-1/2 mt-2 text-xl font-bold text-center !text-[#3c9c64]">
+          <h1 className="w-1/2 mt-2 text-xl font-bold text-center text-teal-600 dark:text-teal-400">
             Follow Our Instagram
           </h1>
         </div>

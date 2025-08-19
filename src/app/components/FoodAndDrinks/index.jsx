@@ -31,17 +31,17 @@ export const FoodAndDrinks = () => {
     "/images/client7.jpg",
   ];
   return (
-    <section className="py-16 px-6 md:px-12 lg:px-20 bg-white">
+    <section className="py-16 px-6 md:px-12 lg:px-20 bg-white dark:bg-gray-900 transition-colors duration-200">
       <div className="flex flex-col md:flex-row gap-12 items-stretch">
         {/* Left Content */}
         <div className="flex-1 flex flex-col justify-center">
           <span className="text-teal-600 font-semibold text-sm uppercase tracking-wide">
             Food & Drink
           </span>
-          <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mt-2">
+          <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 dark:text-white mt-2">
             Quality Food And Drink <br /> Your Trip Are Enjoyable
           </h2>
-          <p className="text-gray-600 mt-4">
+          <p className="text-gray-600 dark:text-gray-300 mt-4">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nenean ac
             tortor at tellus fringilla congue quis sit nunc. Semper ac dolor
             vitae accumsan.
@@ -55,10 +55,10 @@ export const FoodAndDrinks = () => {
                   className="text-teal-500 w-6 h-6 flex-shrink-0"
                 />
                 <div>
-                  <h4 className="text-lg font-semibold text-gray-800">
+                  <h4 className="text-lg font-semibold text-gray-800 dark:text-white">
                     {feature.title}
                   </h4>
-                  <p className="text-gray-600 text-sm">{feature.description}</p>
+                  <p className="text-gray-600 text-sm dark:text-gray-300">{feature.description}</p>
                 </div>
               </li>
             ))}

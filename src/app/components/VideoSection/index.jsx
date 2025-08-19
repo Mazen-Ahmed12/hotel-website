@@ -9,10 +9,10 @@ export const VideoSection = () => {
   return (
     <>
       <section
-        className="relative h-[500px] bg-cover bg-center text-white"
+        className="relative h-[500px] bg-cover bg-center text-white dark:text-white transition-colors duration-200"
         style={{ backgroundImage: "url('/images/Room2.jpg')" }}
       >
-        <div className="absolute inset-0 bg-black opacity-50"></div>
+        <div className="absolute inset-0 bg-black opacity-50 dark:opacity-60 transition-opacity duration-200"></div>
         <div className="relative z-10 flex flex-col items-center justify-center h-full text-center">
           <Button
             className="w-24 h-24 bg-white bg-opacity-30 rounded-full flex items-center justify-center backdrop-blur-sm border border-white/20 hover:bg-opacity-40 transition-all duration-300"

@@ -30,9 +30,9 @@ export const Newsletter = () => {
   };
 
   return (
-    <div className="flex items-center justify-center p-4  font-sans text-white">
-      <div className="w-full max-w-sm p-8 bg-[#232323] rounded-[30px] shadow-2xl">
-        <h2 className="text-xl font-bold tracking-wider mb-8 text-center md:text-left">NEWSLETTER</h2>
+    <div className="flex items-center justify-center font-sans text-white">
+      <div className="w-full max-w-sm p-8 bg-[#232323] dark:bg-white rounded-[30px] shadow-2xl">
+        <h2 className="text-xl font-bold tracking-wider mb-8 text-center md:text-left dark:text-black">NEWSLETTER</h2>
         
         <form onSubmit={handleSubmit} className="space-y-6">
           <div className="relative">
@@ -41,7 +41,7 @@ export const Newsletter = () => {
               placeholder="Ex. info@domain.com"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="w-full bg-transparent border-b border-gray-600 focus:outline-none focus:border-white text-sm text-gray-300 p-2 pr-10"
+              className="w-full bg-transparent border-b border-gray-600 focus:outline-none focus:border-white text-sm text-gray-300 p-2 pr-10 dark:text-black"
             />
             <button type="submit" className="absolute right-0 top-1/2 -translate-y-1/2 text-gray-400 hover:text-white transition-colors duration-200">
               <Icon name="Send" size={25} />

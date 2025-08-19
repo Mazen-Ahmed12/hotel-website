@@ -26,8 +26,8 @@ export const About = () => {
     },
   ];
   return (
-    <div className="w-full h-full pt-30 z-10 flex flex-col gap-5 items-center justify-center bg-[#e9f0ec]">
-      <div className="w-full h-full relative flex justify-center items-center bg-[#e9f0ec] p-4 md:p-6 !py-30 font-sans">
+    <div className="w-full h-full pt-30 z-10 flex flex-col gap-5 items-center justify-center bg-gray-100 dark:bg-gray-950 transition-colors duration-200">
+      <div className="w-full h-full relative flex justify-center items-center bg-gray-100 dark:bg-gray-950 p-4 md:p-6 !py-30 font-sans transition-colors duration-200">
         <div className="px-30 flex flex-col lg:flex-row items-center">
           {/* Left Side: Image with decorations */}
           <div className="relative w-full h-[450px] sm:h-[550px] flex items-end justify-end">
@@ -74,10 +74,10 @@ export const About = () => {
             <span className="text-teal-600 bg-white px-3 py-1 rounded-md self-start text-sm font-semibold">
               ABOUT FIXYLAND
             </span>
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-800 leading-tight">
+            <h1 className="text-4xl md:text-5xl font-bold dark:text-white text-gray-950 leading-tight">
               World Class Luxury Hotel and Resort Near City
             </h1>
-            <p className="text-gray-600">
+            <p className="text-gray-600 dark:text-white">
               There are many variations of passages of Lorem Ipsum available,
               but the majority have suffered alteration in some form, by
               injected humour, or randomised words which don't look even.
@@ -94,7 +94,7 @@ export const About = () => {
                     className="text-teal-500"
                     size={20}
                   />
-                  <span className="text-gray-700">{feature.name}</span>
+                  <span className="text-gray-700 dark:text-white">{feature.name}</span>
                 </div>
               ))}
             </div>
@@ -109,8 +109,8 @@ export const About = () => {
                 />
               </div>
               <div>
-                <p className="font-bold text-gray-800">Robert L. Robinson</p>
-                <p className="text-gray-500">CEO & Founder</p>
+                <p className="font-bold text-gray-800 dark:text-white">Robert L. Robinson</p>
+                <p className="text-gray-500 dark:text-white">CEO & Founder</p>
               </div>
             </div>
           </div>

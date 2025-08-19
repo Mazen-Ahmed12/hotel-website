@@ -18,6 +18,8 @@ import {
   Quote,
   User,
   Send,
+  Sun,
+  Moon
 } from "lucide-react";
 
 import {
@@ -55,6 +57,8 @@ const icons = {
   User: User,
   Send: Send,
   ...socialIcons,
+  Sun: Sun,
+  Moon: Moon,
 };
 
 export const iconNames = Object.keys(icons);

@@ -3,7 +3,7 @@ import { Icon } from "@/components/icon";
 
 export const Testimonial = () => {
   return (
-    <section className="bg-white min-h-screen py-16 font-[Inter]">
+    <section className="bg-white dark:bg-gray-900 min-h-screen py-16 font-[Inter] transition-colors duration-200">
       <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center justify-center lg:justify-between gap-12">
         {/* Left side: Images */}
         <div className="relative flex-1 w-full max-w-lg lg:max-w-xl">
@@ -27,16 +27,16 @@ export const Testimonial = () => {
 
         {/* Right side: Testimonial content */}
         <div className="flex-1 w-full max-w-lg lg:max-w-xl">
-          <span className="text-[#3c9c64] bg-white px-3 py-1 rounded-md self-start text-m font-semibold">
+          <span className="text-teal-600 dark:text-teal-400 bg-white dark:bg-gray-800 px-3 py-1 rounded-md self-start text-m font-semibold shadow-sm">
             TESTIMONIAL
           </span>
-          <h2 className="text-3xl sm:text-4xl font-bold text-[#1a232f] mt-2 leading-tight">
+          <h2 className="text-3xl sm:text-4xl font-bold text-gray-800 dark:text-white mt-2 leading-tight">
             Amazing Feedback Say <br />
             About Services
           </h2>
 
           {/* Testimonial card */}
-          <div className="bg-[#f0f2f5] rounded-3xl p-8 mt-8 shadow-md">
+          <div className="bg-gray-100 dark:bg-gray-800 rounded-3xl p-8 mt-8 shadow-md transition-colors duration-200">
             {/* Star rating */}
             <div className="flex gap-1 text-[#FFC400] mb-4">
               {Array.from({ length: 5 }).map((_, i) => (
@@ -48,7 +48,7 @@ export const Testimonial = () => {
                 />
               ))}
             </div>
-            <p className="text-gray-700 text-xl italic leading-relaxed">
+            <p className="text-gray-600 dark:text-gray-300 text-lg mb-6 italic leading-relaxed">
               &quot;Special treat to dine, it was wow experience food was really
               delicious outstanding dinner made by Master chef food experience
               was unforgetable&quot;
@@ -73,10 +73,10 @@ export const Testimonial = () => {
 
               {/* Text details */}
               <div>
-                <span className="text-2xl block font-semibold text-gray-800">
+                <span className="text-2xl block font-semibold text-gray-800 dark:text-white">
                   Bella Andrew
                 </span>
-                <span className="block text-base text-gray-500">Customer</span>
+                <h4 className="font-bold text-gray-800 dark:text-white">Customer</h4>
               </div>
             </div>
           </div>

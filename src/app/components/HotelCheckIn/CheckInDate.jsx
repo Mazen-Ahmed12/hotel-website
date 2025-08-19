@@ -21,14 +21,14 @@ export const CheckInDate = ({ label }) => {
           <Button
             variant={"outline"}
             className={cn(
-              "w-[220px] h-[50px] justify-between font-normal",
+              "w-[220px] h-[50px] justify-between font-normal bg-white dark:bg-black dark:hover:bg-neutral-800",
               !date && "text-muted-foreground"
             )}
           >
             <div className="pl-3">
-              {date ? format(date, "PPP") : <span>Pick a date</span>}
+              {date ? format(date, "PPP") : <span className="text-black dark:text-white">Pick a date</span>}
             </div>
-            <Icon name="Calendar" className="mr-2 h-4 w-4 justify-end" />
+            <Icon name="Calendar" className="mr-2 h-4 w-4 justify-end " />
           </Button>
         </PopoverTrigger>
         <PopoverContent className="w-auto p-0">

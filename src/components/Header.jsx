@@ -9,10 +9,10 @@ export function Header() {
     <header className="w-full">
       <div className="max-w mx-auto flex justify-between place-content-between ">
         {/* Logo */}
-        <div className="bg-white transform -skew-x-26 pl-30 pr-30 py-2">
+        <div className="bg-white dark:bg-gray-900 transform -skew-x-26 pl-30 pr-30 py-2">
           <div className="transform skew-x-[25deg]">
-            <Link href="/" className="flex items-center text-black text-2xl font-bold">
-              <Icon name="House" size={25} strokeWidth={4} className="text-black" />
+            <Link href="/" className="flex items-center text-black dark:text-white text-2xl font-bold">
+              <Icon name="House" size={25} strokeWidth={4} className="text-black dark:text-white" />
               <span>Fixyland</span>
             </Link>
           </div>

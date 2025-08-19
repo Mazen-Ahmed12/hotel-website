@@ -4,8 +4,10 @@ import React from 'react';
 export const ServiceCard = ({ icon, title, description, highlighted, className, image }) => {
   return (
     <div
-      className={`relative p-6 rounded-lg shadow-md flex flex-col items-start overflow-hidden h-70 ${
-        highlighted ? 'text-white' : 'bg-white text-gray-700'
+      className={`relative p-6 rounded-lg shadow-md flex flex-col items-start overflow-hidden h-70 transition-all duration-200 ${
+        highlighted 
+          ? 'text-white' 
+          : 'bg-white dark:bg-gray-900 text-gray-700 dark:text-gray-200 hover:shadow-lg dark:shadow-gray-800/50'
       }`}>
       {highlighted && (
         <div
@@ -16,9 +18,13 @@ export const ServiceCard = ({ icon, title, description, highlighted, className, 
         </div>
       )}
       <div className="relative z-10">
-      <div className="mb-4">{icon}</div>
-      <h3 className="text-xl font-bold mb-2">{title}</h3>
-      <p className="text-sm">{description}</p>
+        <div className="mb-4">
+          {React.cloneElement(icon, {
+            className: highlighted ? '' : 'text-teal-600 dark:text-teal-400'
+          })}
+        </div>
+        <h3 className="text-xl font-bold mb-2">{title}</h3>
+        <p className="text-sm opacity-90">{description}</p>
       </div>
     </div>
   );

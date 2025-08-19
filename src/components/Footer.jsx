@@ -7,38 +7,38 @@ export const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-[#191919] bg-[radial-gradient(#222_1px,transparent_1px)] text-white pt-16 pb-8">
+    <footer className="bg-[#191919] bg-[radial-gradient(#222_1px,transparent_1px)] text-white dark:bg-[#e9f0ec] dark:text-black pt-16 pb-8">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        <div className="flex flex-wrap mb-30 justify-between">
           {/* Logo and Description */}
-          <div className="mb-8 md:mb-0">
-            <div className="flex items-center gap-2 text-2xl font-bold text-white mb-4">
+          <div className="w-full md:w-1/3 lg:w-1/5 mb-6 md:mb-0 pr-6">
+            <div className="flex items-center gap-2 text-2xl font-bold text-white dark:text-black mb-4">
               <Icon name="House" size={25} />
               <span>FixyLand</span>
             </div>
-            <p className="text-gray-400 mb-6">
+            <p className="text-gray-400 dark:text-gray-600 mb-6">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. it to make a type specimen book. It has survived not
               only five centuries.
             </p>
             <div className="flex space-x-4">
-              <Button className=" bg-[#444] rounded-lg shadow-md hover:bg-[#444] ">
-                <Icon name="facebook" className="" size={30} />
+              <Button className=" bg-[#444] rounded-lg shadow-md hover:bg-[#444] dark:bg-[#e9f0ec] dark:text-black ">
+                <Icon name="facebook" size={30} />
               </Button>
-              <Button className=" bg-[#444] rounded-lg shadow-md hover:bg-[#444] ">
+              <Button className=" bg-[#444] rounded-lg shadow-md hover:bg-[#444] dark:bg-[#e9f0ec] dark:text-black ">
                 <Icon name="twitter" size={30} />
               </Button>
-              <Button className=" bg-[#444] rounded-lg shadow-md hover:bg-[#444] ">
+              <Button className=" bg-[#444] rounded-lg shadow-md hover:bg-[#444] dark:bg-[#e9f0ec] dark:text-black ">
                 <Icon name="instagram" size={30} />
               </Button>
-              <Button className=" bg-[#444] rounded-lg shadow-md hover:bg-[#444] ">
+              <Button className=" bg-[#444] rounded-lg shadow-md hover:bg-[#444] dark:bg-[#e9f0ec] dark:text-black ">
                 <Icon name="behance" size={30} />
               </Button>
             </div>
           </div>
 
           {/* Quick Links */}
-          <div>
+          <div className="w-full md:w-1/3 lg:w-1/5">
             <h3 className="text-lg font-semibold mb-4">Explore</h3>
             <ul className="space-y-3">
               {[
@@ -51,7 +51,7 @@ export const Footer = () => {
                 <li key={item}>
                   <a
                     href="#"
-                    className="text-gray-400 hover:text-white transition-colors"
+                    className="text-gray-400 dark:text-gray-600 hover:text-white dark:hover:text-black transition-colors"
                   >
                     {item}
                   </a>
@@ -61,7 +61,7 @@ export const Footer = () => {
           </div>
 
           {/* Contact Info */}
-          <div>
+          <div className="w-full md:w-1/2 lg:w-1/4">
             <h3 className="text-lg font-semibold mb-4">Contact</h3>
             <ul className="space-y-3">
               <li className="flex items-start">
@@ -86,7 +86,9 @@ export const Footer = () => {
           </div>
 
           {/* Newsletter */}
-          <Newsletter />
+          <div className="w-full md:w-1/2 lg:w-1/4">
+            <Newsletter />
+          </div>
         </div>
 
         {/* Copyright */}
@@ -99,7 +101,10 @@ export const Footer = () => {
               <a href="#" className="text-gray-400 hover:text-white text-sm">
                 Terms & Conditions
               </a>
-              <a href="#" className="text-gray-400 hover:text-white text-sm border-l-1 pl-5 border-gray-500 ">
+              <a
+                href="#"
+                className="text-gray-400 hover:text-white text-sm border-l-1 pl-5 border-gray-500 "
+              >
                 Privacy Policy
               </a>
             </div>

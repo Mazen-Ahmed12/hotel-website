@@ -37,17 +37,17 @@ export const HotelServices = () => {
   ];
 
   return (
-    <section className="py-16 bg-gray-100">
+    <section className="py-16 bg-gray-100 dark:bg-gray-950 transition-colors duration-200">
       <div className="container mx-auto px-4">
         <div className="flex flex-row items-center -mx-4 gap-6">
           <div className="w-full md:w-1/3 px-4 mb-8 md:mb-0 place-self-start">
             <p className="w-[140px] h-[35px] text-teal-500 bg-white rounded-md text-sm text-center place-content-center font-semibold tracking-wider">
               HOTEL SERVICES
             </p>
-            <h2 className="text-4xl font-bold my-4">
+            <h2 className="text-4xl font-bold my-4 text-gray-800 dark:text-white">
               Get The Best Hotel Fixyland Services
             </h2>
-            <p className="text-gray-600 mb-6">
+            <p className="text-gray-600 dark:text-gray-300 mb-6">
               Nulla vitae ex nunc. Morbi quis purus convallis, fermentum hioon
               metus volutpat denign nodinien purus. Nunc quis an mauris etion
               eros vulputate mattis Nulla vitae ex nunc.
@@ -73,7 +73,7 @@ export const HotelServices = () => {
             </div>
           </div>
         </div>
-        <div className="flex justify-center items-center mt-6 text-sm text-gray-600 gap-x-6">
+        <div className="flex justify-center items-center mt-6 text-sm text-gray-600 dark:text-gray-200 gap-x-6">
           <span>Call us Today: (11) 907 654 3210</span>
           <span>OR</span>
           <span>Email us: info@domain.com</span>

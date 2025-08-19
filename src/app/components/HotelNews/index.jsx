@@ -32,12 +32,12 @@ export const HotelNews = () => {
     },
   ];
   return (
-    <div className="bg-[#e9f0ec] py-16 font-[Inter]">
+    <div className="bg-gray-100 dark:bg-gray-950 py-16 font-[Inter] transition-colors duration-200">
       <div className="container mx-auto px-4 text-center">
-        <span className="text-[##3c9c64] bg-white px-3 py-1 rounded-md self-start text-sm font-semibold">
+        <span className="text-teal-600 dark:text-teal-400 bg-white dark:bg-gray-800 px-3 py-1 rounded-md self-start text-sm font-semibold">
           HOTEL NEWS
         </span>
-        <h2 className="mt-2 text-3xl font-bold text-gray-800 sm:text-4xl">
+        <h2 className="mt-2 text-3xl font-bold text-gray-800 dark:text-white sm:text-4xl">
           Get More Update For Fixyland
         </h2>
         <div className="mt-12 w-full flex flex-row justify-center gap-6 px-32">
