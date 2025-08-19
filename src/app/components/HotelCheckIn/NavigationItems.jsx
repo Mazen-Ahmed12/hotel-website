@@ -9,23 +9,27 @@ import Link from "next/link";
 
 export const NavigationItems = ({ label, className }) => {
   return (
-    <NavigationMenuItem>
+    <NavigationMenuItem >
       <NavigationMenuTrigger className={className}>
         {label}
       </NavigationMenuTrigger>
-      <NavigationMenuContent>
-        <ul className="flex w-full gap-4">
-          <li>
-            <NavigationMenuLink asChild>
-              <Link href="#">Lorem Ipsum</Link>
-            </NavigationMenuLink>
-            <NavigationMenuLink asChild>
-              <Link href="#">Lorem Ipsum</Link>
-            </NavigationMenuLink>
-            <NavigationMenuLink asChild>
-              <Link href="#">Lorem Ipsum</Link>
-            </NavigationMenuLink>
-          </li>
+      <NavigationMenuContent className="!w-35">
+        <ul >
+          <NavigationMenuLink asChild>
+            <Link href="#" className="w-full px-4 py-2 hover:bg-gray-100">
+              Single Room
+            </Link>
+          </NavigationMenuLink>
+          <NavigationMenuLink asChild>
+            <Link href="#" className="w-full px-4 py-2 hover:bg-gray-100 ">
+              Double Room
+            </Link>
+          </NavigationMenuLink>
+          <NavigationMenuLink asChild>
+            <Link href="#" className="w-full px-4 py-2 hover:bg-gray-100 ">
+              Suite
+            </Link>
+          </NavigationMenuLink>
         </ul>
       </NavigationMenuContent>
     </NavigationMenuItem>

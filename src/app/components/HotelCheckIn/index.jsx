@@ -15,22 +15,32 @@ export const MiddleContent = () => {
           <CheckInDate label="Check Out" />
 
           <div className="h-full flex items-center">
-            <NavigationMenu className="flex items-center px-4 py-3">
-              <NavigationMenuList className="flex gap-4">
-                <div className="flex flex-col gap-3">
-                  <h1>Room</h1>
-                  <NavigationItems label="Room" className="w-34 h-12" />
-                </div>
-                <div className="flex flex-col gap-3">
-                  <h1>Room</h1>
-                  <NavigationItems label="Adults" className="w-34 h-12" />
-                </div>
-                <div className="flex flex-col gap-3">
-                  <h1>Room</h1>
-                  <NavigationItems label="children" className="w-34 h-12" />
-                </div>
-              </NavigationMenuList>
-            </NavigationMenu>
+            <div className="flex gap-4 px-4 py-3">
+              <div className="flex flex-col gap-3">
+                <h1>Room</h1>
+                <NavigationMenu>
+                  <NavigationMenuList>
+                    <NavigationItems label="Room" className="w-34 h-12" />
+                  </NavigationMenuList>
+                </NavigationMenu>
+              </div>
+              <div className="flex flex-col gap-3">
+                <h1>Adults</h1>
+                <NavigationMenu>
+                  <NavigationMenuList>
+                    <NavigationItems label="Adults" className="w-34 h-12" />
+                  </NavigationMenuList>
+                </NavigationMenu>
+              </div>
+              <div className="flex flex-col gap-3">
+                <h1>Children</h1>
+                <NavigationMenu>
+                  <NavigationMenuList>
+                    <NavigationItems label="Children" className="w-34 h-12" />
+                  </NavigationMenuList>
+                </NavigationMenu>
+              </div>
+            </div>
           </div>
 
           <Button className="flex items-center mt-8 !p-6 bg-[#e6c466] hover:bg-[#e6c466] !px-7 py-5 !rounded-sm text-black">
