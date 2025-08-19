@@ -15,6 +15,7 @@ export const MainPage = () => {
 
   return (
     <section className="relative w-full min-h-screen overflow-hidden">
+      {/* Background Image with Overlay */}
       <div className="absolute inset-0">
         <Image
           src="/images/hotel1.jpg"
@@ -28,9 +29,9 @@ export const MainPage = () => {
       </div>
 
       <div className="relative z-10 min-h-screen flex flex-col">
-        
         <Header />
         
+        {/* Hero Content */}
         <div className="flex-1 flex items-center justify-center px-4 sm:px-6 lg:px-8 py-20 md:py-32">
           <div className="text-center max-w-4xl mx-auto space-y-6 md:space-y-8">
             <div className="overflow-hidden">

@@ -36,6 +36,7 @@ export const About = () => {
               className="absolute -top-20 left-0 w-48 h-48 bg-repeat bg-center rounded-full bg-[radial-gradient(#a0b5a9_2px,transparent_2px)] bg-[length:16px_16px]"
             ></div>
 
+            {/* Main Image */}
             <div className="relative w-[80%] h-full z-10 rounded-3xl shadow-2xl [clip-path:polygon(0_0,100%_0,100%_calc(100%-50px),calc(100%-50px)_100%,0_100%)]">
               <Image
                 src="/images/hotel1.jpg"

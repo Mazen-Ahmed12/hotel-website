@@ -1,10 +1,17 @@
 import React from "react";
 import {
-  NavigationMenu, NavigationMenuList
+  NavigationMenu,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
+import Link from "next/link";
 import { NavigationItems } from "@/app/components/HotelCheckIn/NavigationItems";
 import { Button } from "./ui/button";
 export const HeaderLinks = () => {
+  const className =
+    "bg-transparent hover:bg-transparent focus:bg-transparent active:bg-transparent disabled:pointer-events-none disabled:opacity-50 data-[state=open]:hover:bg-transparent data-[state=open]:focus:bg-transparent data-[state=open]:bg-transparent ";
   return (
     <div className="h-full flex items-center">
       <div className="flex gap-4 px-4 py-3">

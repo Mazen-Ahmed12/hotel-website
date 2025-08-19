@@ -5,6 +5,7 @@ export const Testimonial = () => {
   return (
     <section className="bg-white min-h-screen py-16 font-[Inter]">
       <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center justify-center lg:justify-between gap-12">
+        {/* Left side: Images */}
         <div className="relative flex-1 w-full max-w-lg lg:max-w-xl">
           {/* Main larger image */}
           <div className="relative overflow-hidden rounded-3xl shadow-xl -bottom-11">
@@ -36,6 +37,7 @@ export const Testimonial = () => {
 
           {/* Testimonial card */}
           <div className="bg-[#f0f2f5] rounded-3xl p-8 mt-8 shadow-md">
+            {/* Star rating */}
             <div className="flex gap-1 text-[#FFC400] mb-4">
               {Array.from({ length: 5 }).map((_, i) => (
                 <Icon
@@ -69,6 +71,7 @@ export const Testimonial = () => {
                 />
               </div>
 
+              {/* Text details */}
               <div>
                 <span className="text-2xl block font-semibold text-gray-800">
                   Bella Andrew
