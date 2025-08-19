@@ -14,7 +14,7 @@ export const NavigationItems = ({ label, className }) => {
         {label}
       </NavigationMenuTrigger>
       <NavigationMenuContent className="!w-35">
-        <ul >
+        <ul className="!bg-transparent">
           <NavigationMenuLink asChild>
             <Link href="#" className="w-full px-4 py-2 hover:bg-gray-100">
               Single Room

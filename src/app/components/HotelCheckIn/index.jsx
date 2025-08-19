@@ -16,6 +16,7 @@ export const MiddleContent = () => {
 
           <div className="h-full flex items-center">
             <div className="flex gap-4 px-4 py-3">
+              
               <div className="flex flex-col gap-3">
                 <h1>Room</h1>
                 <NavigationMenu>
@@ -24,6 +25,7 @@ export const MiddleContent = () => {
                   </NavigationMenuList>
                 </NavigationMenu>
               </div>
+              
               <div className="flex flex-col gap-3">
                 <h1>Adults</h1>
                 <NavigationMenu>
@@ -32,11 +34,12 @@ export const MiddleContent = () => {
                   </NavigationMenuList>
                 </NavigationMenu>
               </div>
+              
               <div className="flex flex-col gap-3">
                 <h1>Children</h1>
                 <NavigationMenu>
                   <NavigationMenuList>
-                    <NavigationItems label="Children" className="w-34 h-12" />
+                    <NavigationItems label="Children" className="w-34 h-12 " />
                   </NavigationMenuList>
                 </NavigationMenu>
               </div>
